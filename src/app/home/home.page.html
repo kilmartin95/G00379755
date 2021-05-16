@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Films
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Films</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ul>
+    <li [routerLink]="['/action']" routerDirection="forward">Action</li>
+    <li [routerLink]="['/horror']" routerDirection="forward">Horror</li>
+    <li [routerLink]="['/thriller']" routerDirection="forward">Thriller</li>
+    <li [routerLink]="['/comedy']" routerDirection="forward">Comedy</li>
+  </ul>
+  <hr>
+  <!-- <h3>Gps</h3>
+  <ion-button (click)='GPS'>GPS</ion-button>
+  <br>
+  {{lat}},{{long}} -->
+
+  <!-- <ion-card *ngFor="let movie of MovieData">
+    <img src="{{movie.Poster}}">
+    <ion-card-header>
+      <ion-card-subtitle>{{movie.Year}}</ion-card-subtitle>
+      <ion-card-title>{{movie.Title}}</ion-card-title>
+    </ion-card-header>
+  </ion-card>-->
+
+
+</ion-content>
